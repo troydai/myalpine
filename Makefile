@@ -1,5 +1,5 @@
 image:
-	@ docker build -t myalpine .
+	@ docker build -t troydai/myalpine .
 
 run: image
-	@ docker run --rm -it myalpine
+	@ docker run --rm -it troydai/myalpine
