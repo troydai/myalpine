@@ -1,6 +1,3 @@
 image:
-	@ docker build -t troydai/myalpine:amd64 arch/x86_64
-	@ docker build -t troydai/myalpine:arm64 arch/aarch64
-
-run: image
-	@ docker run --rm -it troydai/myalpine
+	@ docker build --platform linux/amd64 -t troydai/myalpine:amd64 .
+	@ docker build --platform linux/arm64 -t troydai/myalpine:arm64 .
